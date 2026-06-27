@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmic Parallax Journey</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+overflow-x:hidden;
+background:#000;
+color:white;
+}
+
+.parallax{
+height:100vh;
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero{
+background-image:url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564');
+}
+
+.space{
+background-image:url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa');
+}
+
+.planet{
+background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa');
+}
+
+.future{
+background-image:url('https://images.unsplash.com/photo-1519608487953-e999c86e7455');
+}
+
+.content{
+background:#050505;
+padding:120px 10%;
+text-align:center;
+}
+
+.content h2{
+font-size:3rem;
+margin-bottom:20px;
+color:#00e5ff;
+}
+
+.content p{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+font-size:1.1rem;
+color:#ddd;
+}
+
+.title{
+font-size:5rem;
+font-weight:700;
+text-shadow:0 0 25px cyan;
+}
+
+.floating{
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-20px);
+}
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:60px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px cyan;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#00e5ff;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#000;
+}
+
+@media(max-width:768px){
+
+.title{
+font-size:2.8rem;
+}
+
+.content h2{
+font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="parallax hero">
+<div>
+<h1 class="title floating">COSMIC JOURNEY</h1>
+<p>Scroll Down To Explore The Universe</p>
+</div>
+</section>
+
+<section class="content">
+<h2>The Beginning</h2>
+<p>
+Travel through galaxies, stars, and futuristic worlds with a smooth
+parallax scrolling experience. Watch backgrounds move at different
+speeds creating a realistic feeling of depth.
+</p>
+</section>
+
+<section class="parallax space"></section>
+
+<section class="content">
+<h2>Explore Deep Space</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Galaxies</h3>
+<p>Billions of stars forming massive cosmic structures.</p>
+</div>
+
+<div class="card">
+<h3>Black Holes</h3>
+<p>Mysterious regions where gravity bends space and time.</p>
+</div>
+
+<div class="card">
+<h3>Nebulae</h3>
+<p>Beautiful clouds where stars are born.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="parallax planet"></section>
+
+<section class="content">
+<h2>Future Civilizations</h2>
+<p>
+Imagine advanced civilizations living among distant planets,
+powered by artificial intelligence and interstellar technology.
+</p>
+</section>
+
+<section class="parallax future"></section>
+
+<section class="content">
+<h2>The End Is Just The Beginning</h2>
+<p>
+Parallax scrolling combines design, animation, and storytelling
+to create engaging web experiences that users love exploring.
+</p>
+</section>
+
+<footer>
+© 2026 Cosmic Parallax Experience
+</footer>
+
+</body>
+</html>
